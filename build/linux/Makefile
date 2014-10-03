@@ -95,7 +95,7 @@ clean:
 
 test_objs: $(OBJS_DIR)/tests.o $(ROOT_DIR)/pool.h
 $(OBJS_DIR)/tests.o: $(ROOT_DIR)/tests/tests.cpp
-	$(COMPILE)
+	$(COMPILE) -I$(ROOT_DIR)
 
 tests: build $(OUTPUT_DIR)/threadpool.bin
 $(OUTPUT_DIR)/threadpool.bin: test_objs
