@@ -13,3 +13,5 @@ before_install:
 script:
   - cd build/linux
   - make
+  - make tests
+  - ./bin/threadpool.bin
