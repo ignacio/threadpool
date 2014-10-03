@@ -26,7 +26,6 @@ ARCHIVER = $(AR)
 INCLUDES = -I$(BOOST_DIR)
 
 CFLAGS  :=$(CFLAGS) -fPIC -c -Wall -Wextra -pedantic \
-	-Wno-unused-local-typedefs \
 	-fno-strict-aliasing
 
 ifeq (,$(findstring -Wno-error,$(CFLAGS)))
