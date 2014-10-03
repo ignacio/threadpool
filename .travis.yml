@@ -10,6 +10,6 @@ before_install:
   #
   - sudo apt-get install libboost-dev libboost-system-dev libboost-thread-dev
 
-install:
+script:
   - cd build/linux
   - make
