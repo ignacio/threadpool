@@ -16,4 +16,4 @@ script:
   - cd build/linux
   - make
   - make tests
-  - ./bin/threadpool.bin
+  - $INCONCERT_DEVEL/bin/threadpool.bin
